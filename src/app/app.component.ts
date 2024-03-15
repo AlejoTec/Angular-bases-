@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Bases';
+
+  public 'title': string = 'working with angular network😁';
+
+  public counter: number = 20;
+
+  increaseBy(): void {
+    this.counter += 1;
+  }
+  decreaseBy(): void {
+    this.counter -= 1;
+  }
+  reset():void{
+    this.counter = 10;
+  }
+
 }
